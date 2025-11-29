@@ -14,7 +14,7 @@ from io import BytesIO
 import tkinter as tk
 from tkinter import scrolledtext
 from tkinter import ttk
-from typing import Dict, List, Optional, Tuple
+from typing import TYPE_CHECKING, Dict, List, Optional, Tuple
 
 import numpy as np
 import requests
@@ -53,6 +53,11 @@ STOP_WORDS = {
     "remake",
 }
 
+if TYPE_CHECKING:
+    from tkinter import BooleanVar, Listbox, Menu
+    from tkinter.ttk import Menubutton
+
+
 embedding_model: Optional[SentenceTransformer] = None
 embedding_error: Optional[str] = None
 
@@ -67,10 +72,10 @@ active_title_tags: List[str] = []
 # corpus.  These structures back the Tkinter controls.
 rating_options: List[str] = []
 tag_options: List[str] = []
-rating_vars: Dict[str, tk.BooleanVar] = {}
-rating_menu: Optional[tk.Menu] = None
-rating_button: Optional[ttk.Menubutton] = None
-tag_listbox: Optional[tk.Listbox] = None
+rating_vars: Dict[str, "BooleanVar"] = {}
+rating_menu: Optional["Menu"] = None
+rating_button: Optional["Menubutton"] = None
+tag_listbox: Optional["Listbox"] = None
 
 
 def ensure_embedding_model() -> bool:
