@@ -1,12 +1,14 @@
 Hello!
 
 This repository is my personal portfolio showing my coding and data skills. Each project represents a different passion project I created to show you what I can do.
-
+<details>
+<summary>
 ###
 ANIME RECOMMENDATION
 ###
+  </summary>
 This project uses tkinter to create a simple UI where a person can input animes they like as well as criterea for new recommnedations before querying against 
-a fan site via API.
+a fan site via API.</details>
 
 ###
 CUSTOM ENCRYPTION
