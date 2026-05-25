@@ -18,4 +18,10 @@ industry use.
 ###
 POKEMON
 ###
-Another simple tkinter UI for a self-designed pokedex utilizing the pypokedex library.
+Another simple tkinter UI for a self-designed pokedex utilizing the pokeAPI.
+
+###
+SEARCHING ZIP FILES
+###
+This was a script I desined for searching thrid-party account files with millions of rows for specified account numbers without extracting the files. This
+script saved an estimated 80 hours per month in labor.
