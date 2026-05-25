@@ -14,7 +14,7 @@ CUSTOM ENCRYPTION
 </summary>
 An encryption algorithm that allows for two people two encrypt their messages by agreeing upon a simple "key".
 <br>  </br>
-**NOTE**: This was done more as an exploration on encryption and my ability to create a script to perform encryption. This is not functional or optimal for actual 
+<b>NOTE</b>: This was done more as an exploration on encryption and my ability to create a script to perform encryption. This is not functional or optimal for actual 
 industry use.</details>
   
 <details>
